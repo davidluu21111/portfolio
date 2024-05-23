@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio website of David Nguyen, Frontend Developer" />
+  <title>David Nguyen Portfolio</title>
+  <link rel="icon" href="assets/favicon-32x32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="assets/favicon-16x16.png" type="image/png" sizes="16x16" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <img src="assets/David.jpg" alt="David Nguyen profile picture" class="profile-img" />
+      <div class="header-text">
+        <p>Hello, I'm</p>
+        <h1>David Nguyen</h1>
+        <h2>Computer Science student at University of Ottawa</h2>
+        <div class="buttons">
+          <a href="assets/DavidNguyen_resume.pdf" download>
+            <button class="btn">Download CV</button>
+          </a>
+          <a href="#contact">
+            <button class="btn">Contact Info</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section bg-primary">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        Currently a third-year <span class="highlight">Computer Science student at uOttawa</span>. 
+        I love coding full stack web applications and am proficient in 
+        <span class="highlight">Java, Python</span>, and other technologies. 
+        In my free time, I enjoy playing <span class="highlight">League of Legends</span>.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section bg-secondary">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container">
+        <div class="skills-column">
+          <h4>Frontend</h4>
+          <ul>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li><i class="fab fa-angular"></i> Angular</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h4>Backend</h4>
+          <ul>
+            <li><i class="fab fa-node-js"></i> Node JS</li>
+            <li><i class="fas fa-server"></i> Express JS</li>
+            <li><i class="fas fa-database"></i> PostgreSQL</li>
+            <li><i class="fas fa-database"></i> MongoDB</li>
+            <li><i class="fas fa-code"></i> Django</li>
+          </ul>
+        </div>
+        <div class="skills-column">
+          <h4>Other Skills</h4>
+          <ul>
+            <li><i class="fab fa-java"></i> Java</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-code"></i> C/C++</li>
+            <li><i class="fas fa-terminal"></i> Bash</li>
+            <li><i class="fas fa-terminal"></i> PowerShell</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section bg-tertiary">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Deloitte</h3>
+            <span>Jan 2024 - Apr 2024</span>
+            <p>Android Developer (Co-op)</p>
+            <ul>
+              <li>Developed and implemented critical updates for a mobile application, ensuring enhanced performance and reliability.</li>
+              <li>Implemented automated reporting scripts using PowerShell for Windows and Bash for Linux, resulting in an 80% reduction in manual work time.</li>
+              <li>Utilized Git version control system to manage code base effectively.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section bg-quaternary">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Password Generator</h3>
+            <p>Developed a customizable password generator using React, enabling users to create strong passwords with options to include lowercase letters, uppercase letters, numbers, and symbols, and to specify password length.</p>
+            <p>Implemented clipboard functionality for easy password copying, and utilized Font Awesome for icon integration, resulting in a user-friendly and visually appealing interface.</p>
+            <p><strong>Skills:</strong> React.js, HTML</p>
+            <img class="project-img" src="assets/password-generator.png" alt="Password Generator Project" />
+            <div class="project-links">
+              <a href="https://github.com/davidluu21111/Password-generator" target="_blank" class="btn">GitHub</a>
+              <a href="https://davidnguy.netlify.app" target="_blank" class="btn">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Weather App</h3>
+            <p>Built a weather application using React and OpenWeather API, providing users with current weather conditions, forecasts, and weather-related alerts.</p>
+            <p>Implemented responsive design to ensure optimal viewing experience across various devices, and integrated map functionality to display weather data for user-selected locations.</p>
+            <p><strong>Skills:</strong> React.js, API Integration, Responsive Design</p>
+            <img class="project-img" src="assets/weather-app-project.png" alt="Weather App Project" />
+            <div class="project-links">
+              <a href="https://github.com/davidluu21111/Weather-app" target="_blank" class="btn">GitHub</a>
+              <a href="https://weather-app-demo-link" target="_blank" class="btn">Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>Tic Tac Toe</h3>
+            <p>Built a Tic-Tac-Toe web game using HTML, CSS, and JavaScript, featuring both human vs. human and human vs. AI modes with varying difficulty levels.</p>
+            <p>Implemented an intuitive UI/UX design and responsive layout to ensure a smooth and engaging gaming experience across different devices.</p>
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+            <img class="project-img" src="assets/tic-tac-toe-project.png" alt="Tic Tac Toe Project" />
+            <div class="project-links">
+              <a href="https://github.com/davidluu21111/tictactoe" target="_blank" class="btn">GitHub</a>
+              <a href="https://david5x5tictactoe.netlify.app" target="_blank" class="btn">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-primary">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-container">
+        <a href="mailto:lnguy131@uOttawa.ca">
+          <button class="btn contact-btn"><i class="fas fa-envelope"></i></button>
+        </a>
+        <a href="https://www.linkedin.com/in/davidnguyenluu2222" target="_blank">
+          <button class="btn contact-btn"><i class="fab fa-linkedin"></i></button>
+        </a>
+        <a href="https://www.github.com/davidluu21111" target="_blank">
+          <button class="btn contact-btn"><i class="fab fa-github"></i></button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-secondary">
+    <p>&copy; David Nguyen 2024. All rights reserved.</p>
+  </footer>
+</body>
+</html>
