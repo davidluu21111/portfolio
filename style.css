@@ -15,7 +15,7 @@ body {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 
 .section-title {
@@ -31,6 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 60px 20px;
   background-color: #333;
   color: #fff;
@@ -41,10 +42,6 @@ body {
   width: 150px;
   height: 150px;
   margin-bottom: 20px;
-}
-
-.header-text {
-  text-align: center;
 }
 
 .header-text h1 {
@@ -60,6 +57,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -344,6 +342,7 @@ footer p {
 @media screen and (max-width: 992px) {
   .header-container {
     flex-direction: column;
+    text-align: center;
   }
 
   .header-container img {
@@ -409,6 +408,19 @@ footer p {
 
   .btn {
     padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-img {
+    height: auto;
+  }
+
+  .project-links .btn {
+    padding: 8px;
     font-size: 0.9rem;
   }
 }
