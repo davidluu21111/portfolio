@@ -25,28 +25,26 @@ body {
   color: #fff;
 }
 
+/* HEADER */
+
 .header-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 60px 20px;
   background-color: #333;
   color: #fff;
 }
 
-.header-text {
-  text-align: center;
-}
-
-.profile-img {
+.header-container img {
   border-radius: 50%;
   width: 150px;
   height: 150px;
   margin-bottom: 20px;
 }
 
-.header-container img {
-  margin-right: 20px;
+.header-text {
+  text-align: center;
 }
 
 .header-text h1 {
@@ -81,6 +79,8 @@ body {
   border-color: #333;
 }
 
+/* ABOUT */
+
 #about {
   background: url('assets/computer.png') no-repeat center center/cover; /* Background image */
   color: #fff;
@@ -112,9 +112,11 @@ body {
   border-radius: 3px;
 }
 
+/* SKILLS */
+
 .skills-container {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -124,6 +126,7 @@ body {
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex: 1;
+  min-width: 250px; /* Ensure columns don’t get too narrow */
 }
 
 .skills-column h4 {
@@ -148,6 +151,8 @@ body {
   margin-right: 10px;
 }
 
+/* PROJECTS */
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -163,6 +168,7 @@ body {
   width: calc(50% - 20px);
   margin-bottom: 20px;
   text-align: center;
+  min-width: 300px;
 }
 
 .project-card h4 {
@@ -180,6 +186,8 @@ body {
   width: 100%;
   margin-bottom: 10px;
 }
+
+/* CONTACT */
 
 .contact-container {
   display: flex;
@@ -200,15 +208,20 @@ body {
   text-align: center;
 }
 
+/* FOOTER */
+
 footer {
   text-align: center;
   padding: 20px;
+  background-color: #3e6bb2;
 }
 
 footer p {
   margin: 0;
   color: #fff;
 }
+
+/* BACKGROUND COLORS */
 
 .bg-primary {
   background-color: #578ad6;
@@ -312,6 +325,41 @@ footer p {
   left: -13px;
 }
 
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .header-text h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-container img {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .timeline::after {
     left: 31px;
@@ -338,5 +386,29 @@ footer p {
   .timeline-item.left::after,
   .timeline-item.right::after {
     left: 18px;
+  }
+
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-text h2 {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-container img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }
