@@ -2,6 +2,7 @@
 
 ## Group 20:
 Quang Minh Le - 300165003
+</br>
 David Nguyen - 300232884
 
 ## Access to live : https://davidluuportfolio.netlify.app
